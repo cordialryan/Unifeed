@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap");
+
+$primary-clr: #3d3d3d;
+$secondary-clr: #ff6701;
+$bg-clr-1: #fcecdd;
+$bg-clr-2: #ffc288;
+$font: "Poppins", sans-serif;
+
+@mixin clearBtn {
+  border: none;
+  outline: 0;
+  background: none;
+  cursor: pointer;
+}
+@mixin center {
+  margin: auto;
+  width: 90%;
+}
+@mixin transition-1 {
+  transition: all 0.3s ease-in-out;
+}
+@mixin bxShadow {
+  box-shadow: 0.1rem 0.2rem 0.3rem 0rem rgba(0, 0, 0, 0.3);
+}
+@mixin profile {
+  width: 15rem;
+  display: grid;
+  grid-template-columns: 3.5rem auto;
+  grid-template-rows: 1.75rem 1.75rem;
+  gap: 0rem 0.5rem;
+  img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+  }
+  h4,
+  p {
+    white-space: nowrap;
+  }
+  h4 {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+  }
+  p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $primary-clr;
+  }
+}

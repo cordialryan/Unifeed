@@ -1,0 +1,39 @@
+header {
+  background: $bg-clr-2;
+  display: grid;
+  grid-template-columns: 5% repeat(2, 1fr) 5%;
+  padding: 0.5rem 0rem;
+  align-items: center;
+  img {
+    grid-column: 2 / 3;
+  }
+  ul {
+    grid-column: 3 / 4;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 0rem 3rem;
+    a {
+      text-decoration: none;
+      color: $primary-clr;
+      font-size: 0.9rem;
+      @include transition-1;
+      &:hover {
+        color: darken($primary-clr, 100%);
+      }
+    }
+    button {
+      @include clearBtn;
+      background: $secondary-clr;
+      padding: 0.5rem 1rem;
+      border-radius: 0.3rem;
+      color: lighten($primary-clr, 100%);
+      font-size: 1.2rem;
+      @include transition-1;
+      &:hover {
+        background: lighten($secondary-clr, 10%);
+      }
+    }
+  }
+}

@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap");
+header {
+  background: #ffc288;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% (1fr)[2] 5%;
+      grid-template-columns: 5% repeat(2, 1fr) 5%;
+  padding: 0.5rem 0rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+header ul {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  justify-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  gap: 0rem 3rem;
+}
+
+header ul a {
+  text-decoration: none;
+  color: #3d3d3d;
+  font-size: 0.9rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header ul a:hover {
+  color: black;
+}
+
+header ul button {
+  border: none;
+  outline: 0;
+  background: none;
+  cursor: pointer;
+  background: #ff6701;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  color: white;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header ul button:hover {
+  background: #ff8634;
+}
+
+.landing-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.landing-page img[alt="Main Article"] {
+  width: 45rem;
+  height: 35rem;
+  -webkit-box-shadow: 0.1rem 0.2rem 0.3rem 0rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.1rem 0.2rem 0.3rem 0rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+
+.landing-page .headline h2 {
+  font-size: 1.5rem;
+  color: #3d3d3d;
+}
+
+.landing-page .headline h1 {
+  font-size: 3.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ff6701;
+}
+
+.landing-page .headline h3 {
+  color: #3d3d3d;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.landing-page .main-user {
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  -webkit-box-shadow: 0.1rem 0.2rem 0.3rem 0rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.1rem 0.2rem 0.3rem 0rem rgba(0, 0, 0, 0.3);
+  background: #fcecdd;
+  width: 15rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3.5rem auto;
+      grid-template-columns: 3.5rem auto;
+  -ms-grid-rows: 1.75rem 1.75rem;
+      grid-template-rows: 1.75rem 1.75rem;
+  gap: 0rem 0.5rem;
+}
+
+.landing-page .main-user img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.landing-page .main-user h4,
+.landing-page .main-user p {
+  white-space: nowrap;
+}
+
+.landing-page .main-user h4 {
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.landing-page .main-user p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #3d3d3d;
+}
+
+.weekly-newsletter h3 {
+  color: #3d3d3d;
+  margin: 2rem 0rem;
+}
+
+.weekly-newsletter .most-popular-sweets {
+  padding: 1rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0rem 2rem;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: scroll;
+  border-left: 0.2rem solid rgba(0, 0, 0, 0.1);
+  border-right: 0.2rem solid rgba(0, 0, 0, 0.1);
+}
+
+.weekly-newsletter .most-popular-sweets::-webkit-scrollbar {
+  display: none;
+}
+
+.weekly-newsletter .most-popular-sweets .tweets {
+  background: #fcecdd;
+  width: 20rem;
+  -webkit-box-shadow: 0.1rem 0.2rem 0.3rem 0rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.1rem 0.2rem 0.3rem 0rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.3rem;
+}
+
+.weekly-newsletter .most-popular-sweets .tweets img {
+  width: 100%;
+  height: 10rem;
+}
+
+.weekly-newsletter .most-popular-sweets .tweets .profile,
+.weekly-newsletter .most-popular-sweets .tweets h3,
+.weekly-newsletter .most-popular-sweets .tweets .content {
+  padding: 0.3rem 1rem;
+  margin: 0;
+}
+
+.weekly-newsletter .most-popular-sweets .tweets .profile {
+  width: 15rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3.5rem auto;
+      grid-template-columns: 3.5rem auto;
+  -ms-grid-rows: 1.75rem 1.75rem;
+      grid-template-rows: 1.75rem 1.75rem;
+  gap: 0rem 0.5rem;
+  padding: 1rem;
+}
+
+.weekly-newsletter .most-popular-sweets .tweets .profile img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.weekly-newsletter .most-popular-sweets .tweets .profile h4,
+.weekly-newsletter .most-popular-sweets .tweets .profile p {
+  white-space: nowrap;
+}
+
+.weekly-newsletter .most-popular-sweets .tweets .profile h4 {
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.weekly-newsletter .most-popular-sweets .tweets .profile p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #3d3d3d;
+}
+
+.weekly-newsletter .most-popular-sweets .tweets .profile img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  margin: auto;
+  width: 90%;
+}
+
+main h2.weekly-text {
+  margin: 1.5rem 0rem;
+  text-align: center;
+  color: #3d3d3d;
+  position: relative;
+}
+
+main h2.weekly-text::before, main h2.weekly-text::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  background: #ff6701;
+  -webkit-transform: scaleX(0.15);
+          transform: scaleX(0.15);
+}
+
+main h2.weekly-text::after {
+  bottom: -1.2rem;
+  -webkit-transform: scaleX(0.075);
+          transform: scaleX(0.075);
+}
+/*# sourceMappingURL=main.css.map */

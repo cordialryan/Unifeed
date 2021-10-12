@@ -1,0 +1,61 @@
+.landing-page {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  gap: 1rem;
+  img[alt="Main Article"] {
+    width: 45rem;
+    height: 35rem;
+    @include bxShadow;
+    border-radius: 1rem;
+  }
+  .headline {
+    h2 {
+      font-size: 1.5rem;
+      color: $primary-clr;
+    }
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1;
+      text-transform: uppercase;
+      color: $secondary-clr;
+    }
+    h3 {
+      color: $primary-clr;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+  }
+  .main-user {
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    @include bxShadow;
+    background: $bg-clr-1;
+    width: 15rem;
+    display: grid;
+    grid-template-columns: 3.5rem auto;
+    grid-template-rows: 1.75rem 1.75rem;
+    gap: 0rem 0.5rem;
+    img {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      grid-column: 1 / 2;
+      grid-row: 1 / -1;
+    }
+    h4,
+    p {
+      white-space: nowrap;
+    }
+    h4 {
+      font-size: 1.2rem;
+      margin-top: 0.2rem;
+    }
+    p {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: $primary-clr;
+    }
+  }
+}
