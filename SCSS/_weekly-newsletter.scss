@@ -5,16 +5,21 @@
   }
   .most-popular-sweets {
     &::-webkit-scrollbar {
-      display: none;
+      height: 0.7rem;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 1rem;
+      box-shadow: inset 0rem 0rem 0.1rem 0rem $primary-clr;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $primary-clr;
+      border-radius: 1rem;
     }
 
     padding: 1rem 0.5rem;
     display: flex;
     gap: 0rem 2rem;
-    flex-wrap: nowrap;
     overflow-x: scroll;
-    border-left: 0.2rem solid rgba(#000000, 0.1);
-    border-right: 0.2rem solid rgba(#000000, 0.1);
     .tweets {
       background: $bg-clr-1;
       width: 20rem;

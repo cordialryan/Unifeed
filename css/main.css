@@ -153,15 +153,22 @@ header ul button:hover {
   display: -ms-flexbox;
   display: flex;
   gap: 0rem 2rem;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   overflow-x: scroll;
-  border-left: 0.2rem solid rgba(0, 0, 0, 0.1);
-  border-right: 0.2rem solid rgba(0, 0, 0, 0.1);
 }
 
 .weekly-newsletter .most-popular-sweets::-webkit-scrollbar {
-  display: none;
+  height: 0.7rem;
+}
+
+.weekly-newsletter .most-popular-sweets::-webkit-scrollbar-track {
+  border-radius: 1rem;
+  -webkit-box-shadow: inset 0rem 0rem 0.1rem 0rem #3d3d3d;
+          box-shadow: inset 0rem 0rem 0.1rem 0rem #3d3d3d;
+}
+
+.weekly-newsletter .most-popular-sweets::-webkit-scrollbar-thumb {
+  background: #3d3d3d;
+  border-radius: 1rem;
 }
 
 .weekly-newsletter .most-popular-sweets .tweets {
