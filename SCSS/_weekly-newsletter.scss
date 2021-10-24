@@ -25,9 +25,11 @@
       width: 20rem;
       @include bxShadow;
       border-radius: 0.3rem;
+      display: grid;
       img {
         width: 100%;
         height: 10rem;
+        align-self: flex-end;
       }
 
       .profile,
@@ -42,8 +44,21 @@
         img {
           width: 3rem;
           height: 3rem;
-          border-radius: 50%;
         }
+      }
+    }
+  }
+  .recent-sweets {
+    @extend .most-popular-sweets;
+    overflow: hidden;
+    display: grid;
+    .tweets {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 1.5rem;
+      border-radius: 1rem;
+      img {
+        height: 30rem;
       }
     }
   }
